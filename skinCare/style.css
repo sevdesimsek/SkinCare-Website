@@ -1,0 +1,355 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+/* hero section */
+:root{
+    --text-one:#9D5C32 ;
+    --text-two:#E0AA8F ;
+    --text-three: #F5DEB3;
+    --text-four: #5D4036;
+
+
+    --back-one: #384031;
+    --back-two: #5C604F;
+    --back-three:#6C705F;
+
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/foto3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:  45px ;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color: #E0AA8F;
+    font-size: 50px;
+    letter-spacing: 1px; /*harfler arası boşluk*/
+    cursor: pointer;  /* imleç */
+}
+nav a{
+    text-decoration: none; /*alt çizgiyi siler*/
+    color: #E0AA8F;
+    font-weight: bold;
+
+}
+nav ul li{
+    list-style-type: none; /*list noktasını sildi*/
+    display: inline-block; /* yanyana olmalarını sağladı*/
+    padding: 10px 25px ; /*navbarın içinde listelenmiş olan 
+    başlıkların aralarına soldan ve sağdan 25 px lik 
+    boşluklar koydu*/
+
+}
+nav ul li .login-btn{
+    color:wheat;
+    background-color:#E0AA8F;
+    border: 2px solid transparent;
+    padding: 10px 25px ;
+    border-radius: 15px;
+    
+}
+nav ul li .login-btn:hover{
+    transform: scale(1.2);
+}
+nav h2 span{
+    color: #9D5C32;
+}
+nav a:hover {  /*site içerisinde bulunan nesnelerin 
+    üzerine fare imleci ile geldiğimizde yapılacak 
+    işlemlerin belirlendiği bölüme verilen isimdir */
+    color: #9D5C32;
+    transition: .4s; /* renk değişiminin süresi*/
+
+}
+.cart{
+    padding-right: 2em;
+    position: relative;
+    
+}
+.cart .no-of-items{
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: #9D5C32 ;
+    position: absolute;
+    left: 18px;
+    top:-7;
+    background:  #E0AA8F;
+    height: 20px;
+    width: 20px;
+    border-radius: 7px;
+}
+.no-of-items .noi{
+    font-size: 25px;
+}
+.fa-cart-shopping{
+    font-size: 25px;
+    cursor: pointer;
+    color: #E0AA8F;
+}
+/* .btn{
+    color:wheat;
+    background-color:#E0AA8F;
+    border: 2px solid transparent;
+    padding: 10px 25px ;
+    border-radius: 15px;
+}
+.btn:hover{
+    transform: scale(1.2); butonnu üstüne gittiğimde büyüttü
+} */
+.content{
+    color:#E0AA8F;
+    position: absolute; /* istediğim yönden (top left gibi) değer vererek sayfada istediğim yere yerleştirdir*/
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+img{  
+    width: 500px;
+    padding: 20px;
+    margin: 20px;
+    flex:  2;
+}
+.definition{
+    flex:3 ;
+}
+.definition h1{
+    color: wheat;
+    font-size: 50px;
+    line-height: 210%;   
+}
+.definition h4{
+    line-height: 100%;
+}
+.newslatter form{
+    width: 480px;
+    max-width: 100%;
+    position: relative;
+}
+.newslatter form input:first-child{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #E0AA8F;
+    outline: none;
+    border-radius: 25px;
+    font-size: 15px;
+    color: wheat;
+    font-weight: bold;
+
+}
+.newslatter form input[type=password]{
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #E0AA8F;
+    outline: none;
+    border-radius: 25px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+
+.newslatter form .login-btn{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    background-color: #E0AA8F;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585 ; /* input butonun arkasına gölge ekledi*/
+    top:55px; /* bu nasıl buraya pat diye girdi??*/
+    right: 6px; 
+    font-size: 15px;
+    color:wheat;
+    font-weight: bold;
+}
+.newslatter form .login-btn:hover{
+    transform: scale(1.2); 
+    color: #9D5C32;
+    
+ }
+
+ /*about*/
+
+ .about{
+    width: 100%;
+    background-color: #384031;
+    padding: 80px 0;
+ }
+
+ .about img{
+    height: auto;
+    width: 600px ;
+ }
+ .about-text{
+    width: 550px; /*genişlik sınırladık*/
+ }
+ 
+ 
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto; /*auto ortalıyor*/
+    display: flex; /*sayfayı böldüm içeriklerimi yan yana aldım*/
+    align-items: center; /*içeriklerin boyutları farklı olabilir, ortaladım*/
+    justify-content: space-around; /*ANLAMADIM*/
+ }
+ .about-text h2{
+    color:#5D4036 ;
+    font-size:45px ;
+    text-decoration: overline;
+}
+
+
+.about-text h4{
+    color:#D17B43;
+    font-size: 35px;
+    text-decoration: overline;
+    
+
+}
+
+.about-text p{
+    color:#FDD5B5;
+    font-size: 25px;
+    text-decoration: overline;
+
+}
+.about-text p2{
+    color:#FDD5B5;
+    font-size: 25px;
+
+}
+
+button{
+    color:#5D4036;
+    background-color:#FDD5B5;
+    padding: 10px 25px ;
+    box-shadow: 0px 0px 5px #D17B43, 0px 0px 15px #858585 ;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 25px;
+    border: 2px solid transparent;
+}
+button:hover{
+    transform: scale(1.2);
+
+}
+
+
+.Products{
+    width: 100%;
+    background:#5C604F;
+    padding: 100px 0;
+
+}
+.title{
+    color:#5D4036 ;
+    font-size:45px ;
+    text-decoration: overline;
+    margin: 30px auto;
+    text-align: center;
+
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+
+}
+.card{
+    padding: 20px 35px;
+    margin: 15px;
+    position: relative;
+    height: 365px;
+    width: 335px;
+    text-align: center;
+    font-size: 20px;
+    color:#FDD5B5;
+
+}
+.card h5{
+    font-size: 30px;
+    color: #D17B43;
+}
+.card i{
+    font-size: 30px;
+    color: #D17B43;
+}
+.button{
+
+    color:#5D4036;
+    background-color:#FDD5B5;
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 5px #D17B43, 0px 0px 15px #858585 ;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 25px;
+    padding: 1px 15px;
+    text-decoration: none;
+}
+
+.button:hover{
+    transform: scale(1.2); /*butonnu üstüne gittiğimde büyüttü*/
+}
+
+.footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/foto3.jpg) center/cover no-repeat;
+    padding: 3rem 0;
+  }
+
+  
+   .footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 35px;
+  }
+  
+   ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .list-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color:#5D4036 ;
+    margin:0 auto;
+    font-size: 30px;
+  }
+  
+  a {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: normal;
+    color: rgb(218, 142, 101);
+  }
+.footer p{
+    color:#5D4036 ;
+    font-size: 30px;
+
+}
+
+

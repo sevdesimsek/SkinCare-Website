@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Argan Oil",
+        "category": "Face",
+        "price": "25.99",
+        "imgSrc": "images/argan-oil.png"
+    },
+
+    {
+        "name": "Beauty Set-3 Pieces",
+        "category": "Face and Body",
+        "price": "125.99",
+        "imgSrc": "images/beauty-set.png"
+    },
+
+    {
+        "name": "Beauty Set-5 Pieces",
+        "category": "Face and Body",
+        "price": "225.99 ",
+        "imgSrc": "images/beauty-set2.png"
+    },
+
+    {
+        "name": "Vitamin C",
+        "category": "Face",
+        "price": "35.99",
+        "imgSrc": "images/VitC.png"
+    },
+
+    {
+        "name": "Body Cream",
+        "category": "Body",
+        "price": "45.99",
+        "imgSrc": "images/cream.png"
+    },
+
+    {
+        "name": "Sulfate Free Shampoo",
+        "category": "Hair",
+        "price": "45.99",
+        "imgSrc": "images/shampoo.png"
+    },
+
+    {
+        "name": "Hair Serum",
+        "category": "Hair",
+        "price": "32,99",
+        "imgSrc": "images/hair-serum.png"
+    },
+
+    {
+        "name": "Body Scrub",
+        "category": "Body",
+        "price": "86.99",
+        "imgSrc": "images/argan-oil.png"
+    }
+]
